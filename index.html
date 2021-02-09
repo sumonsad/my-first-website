@@ -4,14 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first weibsite</title>
+    <style>
+        input:focus{
+            color:darkblue;
+            font-size: 20px;
+            background: rgb(243, 243, 150);
+        }
+        li:last-child{
+            color:red;
+        }
+ p::before{
+     content: "❤️";
+     font-size: 10px;
+ }
+ .container{
+     background-color: darkolivegreen;
+ }
+ div{
+     height: 100px;
+     width: 100px;
+ }
+ #first{
+     background-color: darkorange;
+ }
+ #second{
+     background-color: darkred;
+     position:relative;
+     left: 100px;
+ }
+ #third{
+     background-color: deeppink;
+ }
+    </style>
 </head>
 <body>
-    <h1>My first website</h1>
-    <h3>Bangladesh</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea voluptatum, similique modi doloremque voluptate vitae hic veniam harum eligendi accusamus!</p>
-    <button>click me</button>
-    <input type="text">
+
+    <input name="email" type="text">
     <br>
-    <button>click me</button>
+    <input name="password" type="text">
+    <ul>
+        <p>apple</p>
+        <p>mango</p>
+        <p>banana</p>
+        <p>orange</p>
+        <p>grapes</p>
+        <p>jackfruit</p>
+        <p>pineapple</p>
+    </ul>
+    <section>
+        <h1>Position</h1>
+    </section>
+    <section class="container">
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+    </section>
 </body>
 </html>
